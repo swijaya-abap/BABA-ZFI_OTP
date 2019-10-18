@@ -1,0 +1,19 @@
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData" Version="1.0">
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="ZFIO_OTP_SRV" xml:lang="en" sap:schema-version="1">
+			<EntityType Name="ZFIS_OTP" sap:content-version="1">
+				<Key><PropertyRef Name="UNAME"/><PropertyRef Name="VMINS"/></Key><Property Name="UNAME" Type="Edm.String" Nullable="false" MaxLength="12" sap:unicode="false" sap:label="User Name" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="VMINS" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="Validity time in minutes"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="MESSAGE" Type="Edm.String" Nullable="false" MaxLength="220" sap:unicode="false" sap:label="Message text"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="USER" sap:content-version="1">
+				<Key><PropertyRef Name="USERNAME"/></Key><Property Name="USERNAME" Type="Edm.String" Nullable="false" MaxLength="12" sap:unicode="false" sap:label="User" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="FULLNAME" Type="Edm.String" Nullable="false" MaxLength="80" sap:unicode="false" sap:label="Full Name" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityContainer Name="ZFIO_OTP_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx"><EntitySet Name="ZFIS_OTPSet" EntityType="ZFIO_OTP_SRV.ZFIS_OTP" sap:creatable="false" sap:updatable="false" sap:deletable="false"
+				sap:pageable="false" sap:addressable="false" sap:content-version="1"/><EntitySet Name="USERSet" EntityType="ZFIO_OTP_SRV.USER" sap:creatable="false" sap:updatable="false" sap:deletable="false"
+				sap:pageable="false" sap:addressable="false" sap:content-version="1"/></EntityContainer><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="self" href="http://172.17.80.40:8000/sap/opu/odata/sap/ZFIO_OTP_SRV/$metadata"/><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="latest-version"
+				href="http://172.17.80.40:8000/sap/opu/odata/sap/ZFIO_OTP_SRV/$metadata"/></Schema>
+	</edmx:DataServices>
+</edmx:Edmx>
