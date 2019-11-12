@@ -113,5 +113,9 @@
 				}
 			}
 		}
+	},
+	"sap.platform.abap": {
+		"uri": "/sap/bc/ui5_ui5/sap/zfit_otp/webapp",
+		"_version": "1.1.0"
 	}
 }
