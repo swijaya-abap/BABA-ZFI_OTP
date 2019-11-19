@@ -4,7 +4,7 @@ sap.ui.define([
 ], function (Controller, JSONModel) {
 	"use strict";
 
-	return Controller.extend("com.baba.ZDSD_UNLOAD_V3.controller.BaseController", {
+	return Controller.extend("com.baba.ZFI_OTP.controller.BaseController", {
 		/**
 		 * Convenience method for accessing the router.
 		 * @public
